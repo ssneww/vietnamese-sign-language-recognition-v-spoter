@@ -1,0 +1,55 @@
+# ================================
+# 1. Python bytecode và cache
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ================================
+# 2. Thư mục môi trường ảo
+# ================================
+# Nếu bạn dùng conda hoặc venv, các folder này sẽ được ignore
+.env/
+.venv/
+venv/
+env/
+
+# ================================
+# 3. Thư mục và file dữ liệu lớn
+# ================================
+# Nếu bạn lưu raw data hoặc output augmentation lớn ở đây
+/data_structurization/
+/datasets/
+
+# ================================
+# 4. Mô hình, checkpoint, logs
+# ================================
+*.pth           # torch checkpoints
+checkpoint*     # mọi file có tên bắt đầu bằng 'checkpoint'
+*.log           # log files
+
+# ================================
+# 5. Phiên bản build / packaging
+# ================================
+build/
+dist/
+*.egg-info/
+
+# ================================
+# 6. Cache và outputs từ test
+# ================================
+.pytest_cache/
+
+# ================================
+# 7. IDE / Editor settings
+# ================================
+.vscode/
+.idea/
+*.sublime-*
+*.sw?
+
+# ================================
+# 8. Hệ điều hành
+# ================================
+.DS_Store
+Thumbs.db
