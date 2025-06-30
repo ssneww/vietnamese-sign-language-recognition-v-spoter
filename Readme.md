@@ -2,7 +2,7 @@
 
 ## Introduction
 
-SPOTER (Sign POse-based TransfomER) is a Transformer-based framework for recognizing isolated sign language words using skeletal pose data. Designed for lightweight deployment on handheld devices, SPOTER achieves state-of-the-art accuracy on benchmarks like WLASL100 and LSA64 by modeling temporal and spatial dependencies in pose sequences.
+SPOTER (Sign Pose-based Transfomer) is a Transformer-based framework for recognizing isolated sign language words using skeletal pose data. Designed for lightweight deployment on handheld devices, SPOTER achieves state-of-the-art accuracy on benchmarks like WLASL100 and LSA64 by modeling temporal and spatial dependencies in pose sequences.
 
 ## Improvements
 
@@ -39,10 +39,10 @@ SPOTER (Sign POse-based TransfomER) is a Transformer-based framework for recogni
 - To train the model, simply specify the hyperparameters and run the following:
 ```bash
 
-python -m train --experiment_name "my_experiment" --epochs 200 --lr 0.001 --training_set_path "data/train.csv" --validation_set_path "data/test1.csv" --testing_set_path "data/tets2.csv" --num_classes 100
+python -m train --experiment_name "my_experiment" --epochs 200 --lr 0.001 --training_set_path "data/train.csv" --validation_set_path "data/test1.csv" --testing_set_path "data/test2.csv" --num_classes 100
 ```
 
-3. **Extract keypoint**
+3. **Extract keypoints**
 - Run the `build_data.py` script and update the paths to match your data:
 - The folder structure under `--input-dir` will look like
 ```text
@@ -63,7 +63,7 @@ As SPOTER works on top of sequences of signers' skeletal data extracted from vid
 - **WLASL videos**: [https://dxli94.github.io/WLASL/](https://dxli94.github.io/WLASL/)
 - **LSA64 videos**: [https://facundoq.github.io/datasets/lsa64/](https://facundoq.github.io/datasets/lsa64/)
 
-## Vietnamese-Sign-Language
+## Vietnamese Sign Language
 With the goal of creating a sign language recognition model for Vietnamese, our research team recorded 1,500 videos covering 100 words for training, and tested using the government dataset: [QIPEDC Dictionary](https://qipedc.moet.gov.vn/dictionary)
 
 ### Data Split
@@ -85,11 +85,11 @@ To obtain the Vietnamese-Sign-Language keypoint data, please visit: [Google Driv
 
 If you have any questions, feedback, or contributions, feel free to reach out:
 
-- **Nguyễn Nhật Tân**  
+- **Nguyen Nhat Tan**  
   📧 [tannguyennhat2024@gmail.com](mailto:tannguyennhat2024@gmail.com)  
 
 
-- **Nguyễn Đức Kha**  
+- **Nguyen Duc Kha**  
   📧 [hongphtn@gmail.com](mailto:hongphtn@gmail.com)
 ## License
 
